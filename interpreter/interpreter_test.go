@@ -25,7 +25,7 @@ func TestVariableDeclaration(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -52,7 +52,7 @@ func TestUpdateCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -79,7 +79,7 @@ func TestDeleteCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -105,7 +105,7 @@ func TestCreateCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -130,7 +130,7 @@ func TestAddCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -155,7 +155,7 @@ func TestSubtractCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -180,7 +180,7 @@ func TestMultiplyCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -205,7 +205,7 @@ func TestDivideCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -230,7 +230,7 @@ func TestUserDefinedFunctionCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
@@ -258,7 +258,7 @@ func TestUserDefinedFunctionMultipleCommand(t *testing.T) {
 
 	// Execute
 	for _, s := range tree.AllStatement() {
-		fslInterpreter.VisitStatement(s.(*parser.StatementContext))
+		fslInterpreter.visitStatement(s.(*parser.StatementContext))
 	}
 
 	// Assert
